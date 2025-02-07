@@ -176,8 +176,8 @@ params:
     defaultImage:
         opengraph:
             enabled: ture
-            local: false
-            src:
+            local: ture
+            src: images/avatar.jpg
 
     colorScheme:
         # Display toggle
