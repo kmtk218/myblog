@@ -16,9 +16,5 @@
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/test/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/</loc>
   </url>
 </urlset>
