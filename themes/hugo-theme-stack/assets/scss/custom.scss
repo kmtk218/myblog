@@ -1,1 +1,35 @@
 /* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+/* 1️⃣ 定义标题字体 TanukiMagic */
+@font-face {
+    font-family: 'TanukiMagic';
+    src: url('/fonts/TanukiMagic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2️⃣ 定义正文字体 Kinghwa */
+@font-face {
+    font-family: 'Kinghwa';
+    src: url('/fonts/kinghwa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 3️⃣ 应用到正文 */
+body, p, article, section, div, span {
+    font-family: 'Kinghwa', sans-serif !important;
+    color: #333;
+}
+
+/* 4️⃣ 应用到标题 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'TanukiMagic', cursive;
+    color: #34495e; /* 蓝色标题 */
+}
+
+blockquote {
+    font-style: 'Kinghwa';
+    color: #808080; /* 灰色 */
+    border-left: 5px solid 	#B0B0B0; /* 左边框 */
+    padding-left: 10px;
+}

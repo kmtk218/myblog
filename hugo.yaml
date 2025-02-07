@@ -2,6 +2,7 @@ baseURL: https://example.com/
 languageCode: ja
 title: Lisa's Home
 theme: hugo-theme-stack
+paginate: 10
 Copyright: Lisa
 
 DefaultContentLanguage: ja
@@ -16,13 +17,6 @@ languages:
         params:
             sidebar:
                 subtitle: ただ呟くだけ
-    zh-cn:
-        languageName: 中文
-        title: Lisa's Home
-        weight: 2
-        params:
-            sidebar:
-                subtitle: 随便说说
 
 services:
     # Change it to your Disqus shortname before using
