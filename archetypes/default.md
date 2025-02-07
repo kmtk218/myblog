@@ -15,6 +15,6 @@ categories = [
 ]
 series = [" "]
 aliases = [" "]
-image = " "
+image = "/images/.jpg"
 draft = true
 +++

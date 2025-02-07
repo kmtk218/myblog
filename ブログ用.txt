@@ -1,0 +1,22 @@
+预览网站
+hugo server
+http://localhost:1313
+
+提交并上传网站
+git add .
+git commit -m "Initial commit"
+
+推送
+git push -u origin main
+
+创建新文件
+hugo new content/post/text/text.md
+
+
+    zh-cn:
+        languageName: 中文
+        title: Lisa's Home
+        weight: 2
+        params:
+            sidebar:
+                subtitle: 随便说说

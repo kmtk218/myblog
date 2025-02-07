@@ -2,13 +2,25 @@
 title: Links
 links:
   - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
+    description: Myblog's Code
+    website: https://github.com/kmtk218/myblog
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
+  - title: Stack
+    description: Card-style theme designed for bloggers
+    website: https://stack.jimmycai.com/
+    image: /images/logo.png
+  - title: Taber Icons
+    description: 5862 pixel-perfect icons for web design
+    website: https://tabler.io/icons
+    image: /images/cover.png
+  - title: Netlify
+    description: Push your ideas to the web
+    website: https://app.netlify.com/sites/lisalisa/
+    image: /images/netlify-icon.png
+  - title: Unsplash
+    description: The internet’s source for visuals
+    website: https://unsplash.com/
+    image: /images/unsplash.png
 menu:
     main: 
         weight: -50
@@ -18,20 +30,4 @@ menu:
 comments: false
 ---
 
-To use this feature, add `links` section to frontmatter.
-
-This page's frontmatter:
-
-```yaml
-links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
-```
-
-`image` field accepts both local and external images.
+よく使うリンク🔗をまとめた。
