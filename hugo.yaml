@@ -218,7 +218,11 @@ menu:
           params:
               icon: brand-twitter
 
-
+        - identifier: twitch
+          name: Twitch
+          url: https://www.twitch.tv/lisa_kmtk
+          params:
+              icon: brand-twitch
 
 related:
     includeNewer: true
