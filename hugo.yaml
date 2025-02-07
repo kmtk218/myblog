@@ -1,8 +1,7 @@
-baseURL: https://kmtk_218.github.io/myblog
+baseURL: https://example.com/
 languageCode: ja
 title: Lisa's Home
 theme: hugo-theme-stack
-paginate: 10
 Copyright: Lisa
 
 DefaultContentLanguage: ja
