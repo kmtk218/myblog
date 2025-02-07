@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Searches on 我的博客</title>
+        <link>http://localhost:1313/search/</link>
+        <description>Recent content in Searches on 我的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language><atom:link href="http://localhost:1313/search/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title></title>
+        <link>http://localhost:1313/search/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/search/about/</guid>
+        <description>&lt;h1 id=&#34;关于我&#34;&gt;关于我
+&lt;/h1&gt;&lt;p&gt;大家好，我是 [你的名字]。这篇文章简要介绍一下我自己。我对[你的兴趣或工作领域]充满热情，喜欢写作、阅读、旅行等。通过这个博客，我希望分享我的思考、观点与生活。&lt;/p&gt;
+&lt;p&gt;如果你对我的作品感兴趣，欢迎在留言区与我互动！&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

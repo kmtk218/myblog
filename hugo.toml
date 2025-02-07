@@ -2,3 +2,6 @@ baseURL = "https://example.com"
 languageCode = "zh-cn"
 title = "我的博客"
 theme = "hugo-theme-stack"
+
+[params]
+  avatar = "/images/avatar.png"
