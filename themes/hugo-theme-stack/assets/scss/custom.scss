@@ -31,3 +31,17 @@ blockquote {
     border-left: 5px solid 	#B0B0B0; /* 左边框 */
     padding-left: 10px;
 }
+
+.music-player {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* 半透明白色背景 */
+    border-radius: 10px; /* 圆角效果 */
+    padding: 10px; /* 内边距 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  }
+
+  .music-player audio {
+    width: 100px; /* 控制播放器的宽度 */
+  }

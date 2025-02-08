@@ -3,6 +3,7 @@
     <head>
         {{- partial "head/head.html" . -}}
         {{- block "head" . -}}{{ end }}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
     </head>
     <body class="{{ block `body-class` . }}{{ end }}">
         {{- partial "head/colorScheme" . -}}
@@ -26,3 +27,4 @@
         {{ partial "footer/include.html" . }}
     </body>
 </html>
+

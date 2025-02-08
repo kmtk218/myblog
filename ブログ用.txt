@@ -13,10 +13,11 @@ git push -u origin main
 hugo new content/post/text/text.md
 
 
-    zh-cn:
-        languageName: 中文
-        title: Lisa's Home
-        weight: 2
-        params:
-            sidebar:
-                subtitle: 随便说说
+<header>
+        <!-- 音乐播放器 -->
+        <div class="music-player">
+          <audio controls autoplay loop>
+            <source src="/music/Eyes On Me.flac" type="audio/mpeg">
+          </audio>
+        </div>
+    </header>
