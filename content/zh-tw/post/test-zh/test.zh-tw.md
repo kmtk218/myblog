@@ -19,11 +19,6 @@ image = "/images/note.jpg"
 draft = false
 +++
 
-<audio controls>
-  <source src="/music/Eyes On Me.flac" type="audio/mpeg">
-</audio>
-
-
  **♡ 𝑅𝑒𝑎𝑑𝑖𝑛𝑔 𝑁𝑜𝑡𝑒 ♡**
 
  **✧ 本の基本情報**
