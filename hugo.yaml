@@ -1,4 +1,4 @@
-baseURL: https://example.com/
+baseURL: https://lisalisa.netlify.app/
 languageCode: ja
 title: Lisa's Home
 theme: hugo-theme-stack
@@ -13,9 +13,18 @@ languages:
         languageName: 日本語
         title: リザきゅんだお
         weight: 1
+        contentDir: content/ja
         params:
             sidebar:
                 subtitle: ただ呟くだけ
+    zh-tw:
+        languageName: 中文
+        title: Lisa's Home
+        weight: 2
+        contentDir: content/zh-tw
+        params:
+            sidebar:
+                subtitle: 随便聊聊
 
 services:
     # Change it to your Disqus shortname before using
@@ -158,7 +167,7 @@ params:
                   limit: 5
             - type: categories
               params:
-                  limit: 10
+                  limit: 20
             - type: tag-cloud
               params:
                   limit: 10
