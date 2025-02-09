@@ -43,7 +43,7 @@ notFound:
 widget:
     archives:
         title:
-            other: 紀錄
+            other: 記録
 
         more:
             other: 更多
@@ -57,7 +57,7 @@ widget:
 
 search:
     title:
-        other: 搜尋
+        other: 搜索
 
     placeholder:
         other: 輸入關鍵字...

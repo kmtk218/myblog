@@ -177,7 +177,7 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site: https://x.com/kmtk_218
+            site: kmtk_218
 
             # Available values: summary, summary_large_image
             card: summary_large_image
@@ -185,8 +185,8 @@ params:
     defaultImage:
         opengraph:
             enabled: ture
-            local: false
-            src: 
+            local: ture
+            src: img/default.jpg
     colorScheme:
         # Display toggle
         toggle: true

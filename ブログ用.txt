@@ -77,7 +77,7 @@ hugo new content/post/text/text.md
             for (let i = 0; i < emojiCount; i++) {
                 const newEmoji = document.createElement("span");
                 newEmoji.textContent = "💖";
-                newEmoji.style.position = "absolute";
+                newEmoji.style.position = "fixed";
                 newEmoji.style.left = `${emojiPosition.left + (Math.random() * 30 - 15)}px`; 
                 newEmoji.style.top = `${emojiPosition.top}px`; 
                 newEmoji.style.fontSize = "24px";
@@ -117,6 +117,10 @@ hugo new content/post/text/text.md
     </script>  
 
 
+
+
+
+
     <!-- 拍手按钮 -->
     <button id="clapButton" style="
         position: fixed; 
@@ -141,8 +145,8 @@ hugo new content/post/text/text.md
         function createFloatingEmoji(x, y) {
             const emoji = document.createElement("span");
             emoji.textContent = "💖";
-            emoji.style.position = "absolute";
-            emoji.style.left = `${x}px`;
+            emoji.style.position = "fixed";
+            emoji.style.left = `${x+ (Math.random() * 20 - 10)}px`;
             emoji.style.top = `${y}px`;
             emoji.style.fontSize = "24px";
             emoji.style.opacity = "1";
@@ -181,7 +185,7 @@ hugo new content/post/text/text.md
                 }
                 100% {
                     opacity: 0;
-                    transform: translateY(-120px) scale(0.6) translateX(${Math.random() * 30 - 15}px);
+                    transform: translateY(-180px) scale(0.6) translateX(${Math.random() * 30 - 15}px);
                 }
             }
         `;
