@@ -40,105 +40,79 @@
 
     {{ partialCached "article/components/photoswipe" . }}
 
-    <style>
-        /* 设置按钮样式 */
-        #clapButton {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            background-color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 15px;
-            border-radius: 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-            z-index: 999; /* 确保按钮在最前面 */
-        }
-    
-        /* 设置点赞数字样式 */
-        #clapCount {
-            font-weight: bold;
-            color: #34495E;
-        }
-    
-        /* 设置emoji漂浮效果 */
-        .clap-emoji {
-            position: absolute;
-            font-size: 25px;
-            color: #f8b8d1;
-            animation: floatUp 1s ease-out forwards;
-            z-index: 1000; /* 确保emoji在按钮前面 */
-        }
-    
-        /* 控制emoji漂浮和变浅的动画 */
-        @keyframes floatUp {
-            0% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-            50% {
-                transform: translateY(-30px);
-                opacity: 0.7;
-            }
-            100% {
-                transform: translateY(-60px);
-                opacity: 0;
-            }
-        }
-    </style>
-    
-    <!-- Clap Button -->
-    <button id="clapButton">
-        👏 <span id="clapCount">0</span>
+    <!-- 拍手按钮 -->
+    <button id="clapButton" style="
+        position: fixed; 
+        bottom: 10px; 
+        right: 10px; 
+        background-color: #fff; 
+        border: none; 
+        padding: 10px 10px; 
+        font-size: 20px; 
+        border-radius: 30px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        cursor: pointer; 
+        transition: background-color 0.3s, transform 0.2s;
+    ">
+        💖
     </button>
-    
+
     <script>
-        let claps = localStorage.getItem('claps') || 0;
-        document.getElementById("clapCount").innerText = claps;
-    
-        document.getElementById("clapButton").addEventListener("click", function() {
-            claps++;
-            localStorage.setItem('claps', claps);
-            document.getElementById("clapCount").innerText = claps;
-    
-            // 添加点击按钮的样式效果
-            this.style.backgroundColor = "#f7b200"; // 背景色变为粉色
-            this.style.transform = "scale(1.1)"; // 按钮稍微放大
-    
-            // 获取按钮的位置
-            const buttonRect = this.getBoundingClientRect();
+        const clapButton = document.getElementById("clapButton");
+
+        clapButton.addEventListener("click", function() {
+            this.style.backgroundColor = "#f4b6c2"; // 点击后按钮背景变粉色
+            this.style.transform = "scale(1.1)"; // 轻微放大效果
             
-            // 添加 emoji 动画效果
-            let emoji = document.createElement("span");
-            emoji.classList.add("clap-emoji");
-            emoji.innerText = "👏";
-            
-            // 设置emoji的位置，确保它出现在按钮上方
-            emoji.style.left = `${buttonRect.left + buttonRect.width / 2 - 15}px`; // 水平居中对齐
-            emoji.style.top = `${buttonRect.top - 30}px`; // 在按钮上方30px位置开始
-    
-            // 将 emoji 添加到页面
-            document.body.appendChild(emoji);
-    
-            // 在动画结束后移除 emoji 元素
-            setTimeout(() => {
-                emoji.remove();
-            }, 1000); // 动画时间需要与动画时长一致
-    
-            // 重置按钮样式
+            // 控制 emoji 数量，随机 3~5 个
+            const emojiCount = Math.floor(Math.random() * 1) + 1; 
+            const emojiPosition = this.getBoundingClientRect();
+
+            for (let i = 0; i < emojiCount; i++) {
+                const newEmoji = document.createElement("span");
+                newEmoji.textContent = "💖";
+                newEmoji.style.position = "absolute";
+                newEmoji.style.left = `${emojiPosition.left + (Math.random() * 30 - 15)}px`; 
+                newEmoji.style.top = `${emojiPosition.top}px`; 
+                newEmoji.style.fontSize = "24px";
+                newEmoji.style.opacity = "1";
+                newEmoji.style.animation = "emoji-float 1.5s forwards ease-out";
+
+                document.body.appendChild(newEmoji);
+
+                // 动画结束后删除 emoji
+                newEmoji.addEventListener("animationend", () => {
+                    newEmoji.remove();
+                });
+            }
+
+            // 300ms 后恢复按钮原样
             setTimeout(() => {
                 this.style.backgroundColor = "#fff";
                 this.style.transform = "scale(1)";
             }, 300);
         });
-    </script>    
+
+        // 追加 CSS 动画
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes emoji-float {
+                0% {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+                100% {
+                    opacity: 0;
+                    transform: translateY(-120px) scale(0.6) translateX(${Math.random() * 30 - 15}px);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script> 
 {{ end }}
+
 
 {{ define "right-sidebar" }}
     {{ if .Scratch.Get "hasWidget" }}{{ partial "sidebar/right.html" (dict "Context" . "Scope" "page") }}{{ end}}
 {{ end }}
-
-
 

@@ -57,7 +57,7 @@ params:
         lastUpdated: 2006-01-02
 
     sidebar:
-        emoji: 💖
+        emoji: 
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         avatar:
             enabled: true
