@@ -71,7 +71,7 @@
             for (let i = 0; i < emojiCount; i++) {
                 const newEmoji = document.createElement("span");
                 newEmoji.textContent = "💖";
-                newEmoji.style.position = "absolute";
+                newEmoji.style.position = "fixed";
                 newEmoji.style.left = `${emojiPosition.left + (Math.random() * 30 - 15)}px`; 
                 newEmoji.style.top = `${emojiPosition.top}px`; 
                 newEmoji.style.fontSize = "24px";
