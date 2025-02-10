@@ -1,20 +1,12 @@
-+++
-author = "Lisa"
-title = " "
-date = "2025-02-11"
-description = " "
-tags = [
-    " ",
-    " ",
-    " ",
-    " ",
-]
-categories = [
-    " ",
-    " ",
-]
-series = [" "]
-aliases = [" "]
-image = "/images/.jpg"
-draft = true
-+++
+---
+author: Lisa
+title: 
+date: '2025-02-01'
+description: 
+categories: []
+tags: []
+series: []
+aliases: []
+image: /images/.jpg
+draft: true
+---

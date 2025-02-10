@@ -1,20 +1,15 @@
-+++
-author = "Lisa"
-title = "讀書筆記"
-date = "2025-02-08"
-description = "詳情如下"
-tags = [
-    "模板",
-]
-categories = [
-    "讀書筆記",
-    "模板",
-]
-series = ["讀書筆記"]
-aliases = ["模板"]
-image = "/images/note.jpg"
-draft = false
-+++
+---
+author: Lisa
+title: 讀書筆記
+date: '2025-02-08'
+description: 詳情如下
+tags: [模板]
+categories: [讀書筆記,模板]
+series: [讀書筆記]
+aliases: [模板]
+image: /images/note.jpg
+draft: false
+---
 
 <center>
 
